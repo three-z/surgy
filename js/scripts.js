@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 	$('.home-why__box').matchHeight();
 
-	$('.home-popular__list').slick({
+	$('.home-popular__list, .catalog-viewed__list, .catalog-recommend__list').slick({
 		autoplay: false,
 		dots: false,
 		arrows: true,
@@ -73,4 +73,18 @@ $(document).ready(function() {
 		]
 	});
 
+	$('.page .range-slider').slider({
+		range: true,
+		min: 0,
+		max: 500,
+		values: [0, 400]
+	});
+
+	$('.catalog-filter__toggle').on('click', function() {
+		$(this).parents('.catalog-filter__block').toggleClass('catalog-filter__block--closed');
+	});
+
+	$('.catalog-filter__open').on('click', function() {
+		$(this).parents('.catalog-filter').find('.catalog-filter__form').toggleClass('catalog-filter__form--opened');
+	});
 });

@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title></title>
+
+	<link rel="stylesheet" href="bower_components/open-sans.css">
+
+	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+	<link rel="stylesheet" href="bower_components/jquery.form-styler/dist/jquery.formstyler.css">
+	<link rel="stylesheet" href="bower_components/jquery.form-styler/dist/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="page">
+
+	<div class="header">
+		<div class="header-mobile">
+			<div class="container">
+				<div class="header-mobile__button">
+					<a href="#">Меню</a>
+				</div>
+				<div class="header-mobile__logo">
+					<a href="#"><img src="img/logo-mobile.png" alt=""></a>
+				</div>
+				<div class="header-mobile__cart">
+					<a href="#">0</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-top">
+			<div class="container">
+				<div class="header-nav">
+					<ul class="header-nav__list">
+						<li class="header-nav__item"><a href="#">О компании</a></li>
+						<li class="header-nav__item"><a href="#">Новости</a></li>
+						<li class="header-nav__item"><a href="#">Оплата</a></li>
+						<li class="header-nav__item"><a href="#">Доставка</a></li>
+						<li class="header-nav__item"><a href="#">Как заказать</a></li>
+						<li class="header-nav__item"><a href="#">Партнёрам</a></li>
+						<li class="header-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header-user">
+					<ul class="header-user__list">
+						<li class="header-user__item header-user__item--login"><a href="#">Войти</a></li>
+						<li class="header-user__item header-user__item--register"><a href="#">Зарегистрироваться</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="header-contacts">
+					<div class="header-contacts__phone">
+						<a href="tel:88000000000">8 (800) 000-00-00</a><br>
+						<span>Бесплатно по всей России</span>
+					</div>
+					<div class="header-contacts__phone">
+						<a href="tel:+73832095069">7 (383) 209-50-69</a><br>
+						<span>Новосибирск</span>
+					</div>
+					<div class="header-contacts__mail">
+						<a href="mailto:mail@surgy-pro.ru">mail@surgy-pro.ru</a>
+					</div>
+				</div>
+				<div class="header-call">
+					<a href="#">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div class="container">
+			<div class="middle-nav">
+				<div class="middle-nav__button">
+					<a href="#">Каталог товаров</a>
+				</div>
+			</div>
+			<div class="middle-search">
+				<form action="" class="middle-search__form">
+					<input type="text" placeholder="Введите что вы хотите найти, например, операционная лампа">
+					<button type="submit">Искать</button>
+				</form>
+			</div>
+			<div class="middle-cart">
+				<a href="#">Корзина <strong>0</strong></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="#">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#">Каталог</a>
+					</li>
+					<li class="breadcrumbs__item">
+						Сетки
+					</li>
+				</ul>
+			</div>
+			<div class="page-title">
+				<h1>Сетки</h1>
+			</div>
+			<div class="catalog-section">
+				<div class="catalog-section__sidebar">
+					<div class="catalog-filter">
+						<div class="catalog-filter__open">
+							<a href="#">Фильтр</a>
+						</div>
+						<form action="" class="catalog-filter__form">
+							<div class="catalog-filter__block">
+								<div class="catalog-filter__name">
+									Цена (руб.)
+								</div>
+								<div class="catalog-filter__box">
+									<div class="catalog-filter__price">
+										<div class="catalog-filter__price-input">
+											<input type="text">
+										</div>
+										<div class="catalog-filter__price-input">
+											<input type="text">
+										</div>
+									</div>
+									<div class="catalog-filter__price-range">
+										<div class="range-slider"></div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-filter__block">
+								<div class="catalog-filter__toggle">
+									<div class="catalog-filter__name">
+										Бренд
+									</div>
+								</div>
+								<div class="catalog-filter__box">
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Bausch+Lomb</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Canon</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Karl Kaps</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Optopol Technology</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Quantel Medical</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Technolas Perfect Vision</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Visionix Luneau</label>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-filter__block catalog-filter__block--closed">
+								<div class="catalog-filter__toggle">
+									<div class="catalog-filter__name">
+										Параметры фильтра 2
+									</div>
+								</div>
+								<div class="catalog-filter__box">
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Bausch+Lomb</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Canon</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Karl Kaps</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Optopol Technology</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Quantel Medical</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Technolas Perfect Vision</label>
+									</div>
+									<div class="catalog-filter__line">
+										<label><input type="checkbox"> Visionix Luneau</label>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-filter__do">
+								<a href="#" class="catalog-filter__clear">Очистить фильтр</a><br>
+								<button type="submit">Применить</button>
+							</div>
+
+						</form>
+					</div>
+				</div>
+				<div class="catalog-section__content">
+					<div class="catalog-section__controls">
+						<div class="catalog-section__controls-col">
+							<div class="catalog-sort">
+								<select>
+									<option>По популярности</option>
+									<option>По новизне</option>
+									<option>По цене</option>
+									<option>По названию</option>
+								</select>
+							</div>
+						</div>
+						<div class="catalog-section__controls-col">
+							<div class="catalog-view">
+								<ul class="catalog-view__list">
+									<li class="catalog-view__item catalog-view__item--grid catalog-view__item--active">
+										<a href="#">Плитка</a>
+									</li>
+									<li class="catalog-view__item catalog-view__item--line">
+										<a href="#">Список</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-section__list">
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard
+											Mesh Pre-Shaped Сетка хирургическая Bard
+											Mesh Pre-Shaped
+											Сетка хирургическая Bard
+											Mesh Pre-Shaped Сетка хирургическая Bard
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard <br>
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard <br>
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard
+											Mesh Pre-Shaped Сетка хирургическая Bard
+											Mesh Pre-Shaped
+											Сетка хирургическая Bard
+											Mesh Pre-Shaped Сетка хирургическая Bard
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard <br>
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard <br>
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard
+											Mesh Pre-Shaped Сетка хирургическая Bard
+											Mesh Pre-Shaped
+											Сетка хирургическая Bard
+											Mesh Pre-Shaped Сетка хирургическая Bard
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard <br>
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-section__item">
+							<div class="catalog-list-item">
+								<div class="catalog-list-item__image">
+									<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+								</div>
+								<div class="catalog-list-item__info">
+									<div class="catalog-list-item__articul">
+										Арт. 0113700
+									</div>
+									<div class="catalog-list-item__name">
+										<a href="#">
+											Сетка хирургическая Bard <br>
+											Mesh Pre-Shaped
+										</a>
+									</div>
+									<div class="catalog-list-item__price">
+										1 000 руб. <i>1 167 руб.</i>
+									</div>
+								</div>
+								<div class="catalog-list-item__add">
+									<a href="#">Добавить в корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-section__pagination">
+						<div class="catalog-section__pagination-col">
+							<div class="pager">
+								<ul class="pager__list">
+									<li class="pager__item pager__item--first pager__item--disable">
+										<a href="#">В начало</a>
+									</li>
+									<li class="pager__item pager__item--active">
+										<a href="#">1</a>
+									</li>
+									<li class="pager__item">
+										<a href="#">2</a>
+									</li>
+									<li class="pager__item">
+										<a href="#">3</a>
+									</li>
+									<li class="pager__item pager__item--dots">
+										...
+									</li>
+									<li class="pager__item">
+										<a href="#">23</a>
+									</li>
+									<li class="pager__item pager__item--last">
+										<a href="#">В конец</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="catalog-section__pagination-col">
+							<div class="show-items">
+								Показано 9 товаров из 65
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="catalog-viewed">
+		<div class="container">
+			<div class="catalog-viewed__box">
+				<div class="catalog-viewed__title">
+					<h3>Вы ранее смотрели</h3>
+				</div>
+				<div class="catalog-viewed__list">
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-viewed__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="catalog-recommend">
+		<div class="container">
+			<div class="catalog-recommend__box">
+				<div class="catalog-recommend__title">
+					<h3>Персональные рекоммендации</h3>
+				</div>
+				<div class="catalog-recommend__list">
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/1.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+										Сетка хирургическая Bard
+										Mesh Pre-Shaped Сетка хирургическая Bard
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/2.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-recommend__item">
+						<div class="catalog-list-item">
+							<div class="catalog-list-item__image">
+								<a href="#"><img src="img/catalog-list-item/3.jpg" alt=""></a>
+							</div>
+							<div class="catalog-list-item__info">
+								<div class="catalog-list-item__articul">
+									Арт. 0113700
+								</div>
+								<div class="catalog-list-item__name">
+									<a href="#">
+										Сетка хирургическая Bard <br>
+										Mesh Pre-Shaped
+									</a>
+								</div>
+								<div class="catalog-list-item__price">
+									1 000 руб. <i>1 167 руб.</i>
+								</div>
+							</div>
+							<div class="catalog-list-item__add">
+								<a href="#">Добавить в корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+							<span>
+								Профессиональный интернет-магазин <br>
+								хирургического оборудования <br>
+								и материалов
+							</span>
+						</a>
+					</div>
+					<div class="footer-contacts">
+						<div class="footer-contacts__phone">
+							<a href="tel:88000000000">8 (800) 000-00-00</a><br>
+							<span>Бесплатно по всей России</span>
+						</div>
+						<div class="footer-contacts__phone">
+							<a href="tel:+73832095069">7 (383) 209-50-69</a><br>
+							<span>Новосибирск</span>
+						</div>
+						<div class="footer-contacts__mail">
+							<a href="mailto:mail@surgy-pro.ru">mail@surgy-pro.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-nav">
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item footer-nav__item--active"><a href="#">О компании</a></li>
+						<li class="footer-nav__item"><a href="#">Новости</a></li>
+						<li class="footer-nav__item"><a href="#">Оплата</a></li>
+						<li class="footer-nav__item"><a href="#">Доставка</a></li>
+						<li class="footer-nav__item"><a href="#">Как заказать</a></li>
+						<li class="footer-nav__item"><a href="#">Партнёрам</a></li>
+						<li class="footer-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-subscribe">
+					<strong>Подпишитесь на рассылку</strong><br>
+					И получайте уведомления об акциях и скидках<br>
+					<form action="" class="footer-subscribe__form">
+						<input type="text" placeholder="Введите ваш E-mail">
+						<button type="submit">Подписаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-copy">
+					© 2017 ООО «Медицинская Техника и Технологии»
+				</div>
+				<div class="footer-payment">
+					Принимаем к оплате <img src="img/robokassa-logo.png" alt="">
+				</div>
+				<div class="footer-social">
+					<ul class="footer-social__list">
+						<li class="footer-social__item footer-social__item--fb"><a href="#">Facebook</a></li>
+						<li class="footer-social__item footer-social__item--vk"><a href="#">Вконтакте</a></li>
+						<li class="footer-social__item footer-social__item--ok"><a href="#">Одноклассники</a></li>
+						<li class="footer-social__item footer-social__item--in"><a href="#">Instagram</a></li>
+						<li class="footer-social__item footer-social__item--yt"><a href="#">YouTube</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/jquery.form-styler/dist/jquery.formstyler.min.js"></script>
+<script src="bower_components/matchheight/dist/jquery.matchHeight-min.js"></script>
+<script src="bower_components/slick.js/slick/slick.min.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
