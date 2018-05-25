@@ -80,11 +80,33 @@ $(document).ready(function() {
 		values: [0, 400]
 	});
 
-	$('.catalog-filter__toggle').on('click', function() {
+	$('.catalog-filter__toggle').on('click', function(e) {
+		e.preventDefault();
 		$(this).parents('.catalog-filter__block').toggleClass('catalog-filter__block--closed');
 	});
 
-	$('.catalog-filter__open').on('click', function() {
+	$('.catalog-filter__open').on('click', function(e) {
+		e.preventDefault();
 		$(this).parents('.catalog-filter').find('.catalog-filter__form').toggleClass('catalog-filter__form--opened');
+	});
+
+	$('.header-user__item--login').on('click', function(e) {
+		e.preventDefault();
+		$(this).find('.header-login').toggleClass('header-login--opened');
+		if ($('.header-login').hasClass('header-login--opened')) {
+			$('<div class="header-login__overlay" />').appendTo('.page').mousedown(function(e) {
+				var clicked = $(e.target);
+				if (clicked.is('.header-login') || clicked.parents().is('.header-login')) {
+					return;
+				}
+				else {
+					$('.header-login').toggleClass('header-login--opened');
+					$('.header-login__overlay').remove();
+				}
+			});
+		}
+		else {
+			$('.header-login__overlay').remove();
+		}
 	});
 });
