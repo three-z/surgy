@@ -90,9 +90,9 @@ $(document).ready(function() {
 		$(this).parents('.catalog-filter').find('.catalog-filter__form').toggleClass('catalog-filter__form--opened');
 	});
 
-	$('.header-user__item--login').on('click', function(e) {
+	$('.header-user__item--login > a').on('click', function(e) {
 		e.preventDefault();
-		$(this).find('.header-login').toggleClass('header-login--opened');
+		$(this).parents('.header-user__item--login').find('.header-login').toggleClass('header-login--opened');
 		if ($('.header-login').hasClass('header-login--opened')) {
 			$('<div class="header-login__overlay" />').appendTo('.page').mousedown(function(e) {
 				var clicked = $(e.target);
