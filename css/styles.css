@@ -687,7 +687,7 @@ a {
   z-index: 4;
   margin-top: 25px; }
   .header-login__overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
