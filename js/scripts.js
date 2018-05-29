@@ -178,7 +178,7 @@ $(document).ready(function() {
 	    $(this).parents('.middle-nav').toggleClass('middle-nav--parent-hovered');
 	});
 
-	$('.catalog-item__count input').spinner({
+	$('.catalog-item__count input, .cart-table__count input').spinner({
 		min: 1,
 		max: 99
 	});
