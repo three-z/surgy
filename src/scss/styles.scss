@@ -877,7 +877,7 @@ a {
 		left: 0;
 		right: 0;
 		background: #f7f6fb;
-		background-image: url("../img/middle-nav-bg.jpg");
+		background-image: url("../img/middle-nav/bg.jpg");
 		background-repeat: no-repeat;
 		background-position: 100% 100%;
 		border-top: 1px solid #e5e5e5;
@@ -4281,6 +4281,7 @@ a {
 
 		label {
 			@include clearfix;
+			cursor: pointer;
 			font-size: 13px;
 			color: #010101;
 
@@ -4322,5 +4323,126 @@ a {
 	@include size(small) {
 		max-width: 100%;
 		width: 100%;
+	}
+}
+
+// order pay
+
+.order-pay {
+
+	&__box {
+		position: relative;
+		padding-top: 40px;
+		padding-left: 39px;
+		padding-right: 10px;
+		padding-bottom: 45px;
+		background-color: #f7f6fb;
+		border-radius: 14px;
+		overflow: hidden;
+
+		&:before {
+			@include null-pseudo;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			background-image: url("../img/order-pay/bg.jpg");
+			background-repeat: no-repeat;
+			background-position: 100% 100%;
+
+			@include size(medium) {
+				opacity: .5;
+			}
+
+			@include size(small) {
+				opacity: .3;
+			}
+
+			@include size(mobile) {
+				opacity: .2;
+			}
+		}
+
+		h3 {
+			@include null-block;
+			color: #3f3f3f;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 24px;
+			margin-bottom: 14px;
+		}
+	}
+
+	&__info {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__button {
+		margin-top: 41px;
+
+		a {
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			width: 100%;
+			max-width: 221px;
+			background-color: #598ef0;
+			border-radius: 27px;
+			box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+			padding: 15px 20px;
+			color: #ffffff;
+			font-size: 13px;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 1px;
+		}
+	}
+
+	&__code {
+		font-size: 18px;
+		color: #000000;
+	}
+
+	&__list {
+		@include null-list;
+		@include clearfix;
+	}
+
+	&__item {
+		float: left;
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			padding-top: 6px;
+			padding-left: 28px;
+			padding-right: 28px;
+			padding-bottom: 6px;
+			display: inline-block;
+			vertical-align: top;
+			border: 2px solid #0ce88e;
+			border-radius: 20px;
+			text-align: center;
+			color: #010101;
+			font-size: 13px;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+
+			@include size(mobile) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+
+		@include size(mobile) {
+			margin-right: 14px;
+		}
 	}
 }
