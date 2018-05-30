@@ -50,15 +50,19 @@
 				</div>
 				<div class="header-user">
 					<ul class="header-user__list">
+						<!--
 						<li class="header-user__item header-user__item--login">
 							<a href="#">Войти</a>
 							<div class="header-login">
 								<form action="" class="header-login__form">
-									<div class="header-login__line">
-										<input type="text" placeholder="E-mail">
+									<div class="errors">
+										Вы сломали интернет!
 									</div>
 									<div class="header-login__line">
-										<input type="password" placeholder="Пароль">
+										<input type="text" placeholder="E-mail" class="error">
+									</div>
+									<div class="header-login__line">
+										<input type="password" placeholder="Пароль" class="error">
 									</div>
 									<div class="header-login__line">
 										<label><input type="checkbox"> Запомнить меня</label>
@@ -70,6 +74,26 @@
 							</div>
 						</li>
 						<li class="header-user__item header-user__item--register"><a href="#">Зарегистрироваться</a></li>
+						-->
+						<li class="header-user__item header-user__item--personal">
+							<a href="#">Личный кабинет</a>
+							<div class="header-personal-nav">
+								<ul class="header-personal-nav__list">
+									<li class="header-personal-nav__item">
+										<a href="#">Персональная страница</a>
+									</li>
+									<li class="header-personal-nav__item">
+										<a href="#">Профиль</a>
+									</li>
+									<li class="header-personal-nav__item">
+										<a href="#">История заказов</a>
+									</li>
+									<li class="header-personal-nav__item header-personal-nav__item--exit">
+										<a href="#">Выход</a>
+									</li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -194,6 +218,9 @@
 			<div class="page-title">
 				<h1>Регистрация</h1>
 			</div>
+			<div class="errors">
+				Вы сломали интернет!
+			</div>
 			<div class="register">
 				<form action="" class="form">
 					<div class="register__content">
@@ -202,10 +229,10 @@
 								<h3>Личные данные</h3>
 							</div>
 							<div class="form__row">
-								<input type="text" placeholder="E-mail">
+								<input type="text" placeholder="E-mail" class="error">
 							</div>
 							<div class="form__row">
-								<input type="password" placeholder="Пароль">
+								<input type="password" placeholder="Пароль" class="error">
 							</div>
 							<div class="form__row">
 								<input type="password" placeholder="Подтверждение пароля">

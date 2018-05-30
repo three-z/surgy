@@ -168,6 +168,26 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.header-user__item--personal > a').on('click', function(e) {
+		e.preventDefault();
+		$(this).parents('.header-user__item--personal').find('.header-personal-nav').toggleClass('header-personal-nav--opened');
+		if ($('.header-personal-nav').hasClass('header-personal-nav--opened')) {
+			$('<div class="header-personal-nav__overlay" />').appendTo('.page').mousedown(function(e) {
+				var clicked = $(e.target);
+				if (clicked.is('.header-personal-nav') || clicked.parents().is('.header-personal-nav')) {
+					return;
+				}
+				else {
+					$('.header-personal-nav').toggleClass('header-personal-nav--opened');
+					$('.header-personal-nav__overlay').remove();
+				}
+			});
+		}
+		else {
+			$('.header-personal-nav__overlay').remove();
+		}
+	});
+
 	$('.middle-nav__item').each(function() {
 		if ($(this).find('.middle-nav__list').length > 0) {
 			$(this).toggleClass('middle-nav__item--has-sublist');
