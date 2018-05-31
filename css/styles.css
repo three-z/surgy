@@ -344,6 +344,7 @@ a:hover {
   -webkit-appearance: none;
   display: block;
   float: none;
+  -webkit-appearance: none;
   width: 100%;
   max-width: 310px;
   padding-left: 15px;
@@ -438,14 +439,21 @@ a:hover {
 }
 
 .page button,
-.popup button {
+.page input[type="submit"],
+.popup button,
+.popup input[type="submit"] {
+  -webkit-appearance: none;
   outline: none;
 }
 
 .page button:disabled,
 .page button[disabled],
+.page input[type="submit"]:disabled,
+.page input[type="submit"][disabled],
 .popup button:disabled,
-.popup button[disabled] {
+.popup button[disabled],
+.popup input[type="submit"]:disabled,
+.popup input[type="submit"][disabled] {
   opacity: .5 !important;
   cursor: default !important;
 }
@@ -7133,7 +7141,9 @@ a:hover {
   margin-top: 41px;
 }
 
-.order-pay__button a {
+.order-pay__button a,
+.order-pay__button input[type="submit"] {
+  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -7150,6 +7160,11 @@ a:hover {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
+}
+
+.order-pay__button a:hover,
+.order-pay__button input[type="submit"]:hover {
+  opacity: .7;
 }
 
 .order-pay__code {
