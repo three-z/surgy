@@ -293,6 +293,12 @@ a {
 
 	button {
 		outline: none;
+
+		&:disabled,
+		&[disabled] {
+			opacity: .5 !important;
+			cursor: default !important;
+		}
 	}
 
 	.ui-slider {
@@ -3104,6 +3110,120 @@ a {
 		margin-top: 30px;
 		margin-left: -15px;
 		margin-right: -15px;
+
+		&--inline {
+
+			.catalog-section__item {
+				width: 100%;
+			}
+
+			.catalog-list-item {
+				position: relative;
+				overflow: hidden;
+				border: 1px solid #efefef;
+
+				&__image {
+					float: left;
+					width: 23%;
+					border-radius: 0;
+
+					a {
+						padding-bottom: 85%;
+
+						@include size(big) {
+							padding-bottom: 90%;
+						}
+
+						@include size(medium) {
+							padding-bottom: 85%;
+						}
+
+						@include size(small) {
+							padding-bottom: 103%;
+						}
+
+						@include size(mobile) {
+							padding-bottom: 74%;
+						}
+					}
+
+					@include size(mobile) {
+						float: none;
+						width: 100%;
+					}
+				}
+
+				&__info {
+					float: left;
+					width: 59%;
+
+					@include size(small) {
+						padding-top: 10px;
+						padding-bottom: 5px;
+					}
+
+					@include size(mobile) {
+						float: none;
+						width: 100%;
+						padding-top: 21px;
+						padding-left: 29px;
+						padding-right: 21px;
+						padding-bottom: 16px;
+					}
+				}
+
+				&__add {
+					width: 18%;
+					border-top: none;
+					border-left: 1px solid #e8e8e8;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					border-radius: 0;
+
+					a {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						padding-left: 0;
+						padding-right: 0;
+						padding-top: 28px;
+						background-position: 50% 0;
+						white-space: normal;
+						font-size: 13px;
+
+						@include size(small) {
+							font-size: 11px;
+						}
+
+						@include size(mobile) {
+							display: inline-block;
+							vertical-align: top;
+							position: static;
+							transform: none;
+							font-size: 15px;
+							padding-left: 40px;
+							background-position: 0 50%;
+							padding-right: 12px;
+							padding-top: 0;
+						}
+					}
+
+					@include size(mobile) {
+						width: 100%;
+						position: static;
+						border-left: none;
+						border-top: 1px solid #e8e8e8;
+						padding-top: 14px;
+						padding-bottom: 17px;
+						overflow: hidden;
+						text-align: center;
+					}
+				}
+			}
+		}
 	}
 
 	&__item {
@@ -3140,9 +3260,67 @@ a {
 	}
 }
 
+.catalog-subcategories {
+	padding-top: 17px;
+	padding-left: 19px;
+	padding-right: 10px;
+	padding-bottom: 18px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e8e8e8;
+
+	&__list {
+		@include null-list;
+	}
+
+	&__item {
+		margin-bottom: 12px;
+		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&--exit {
+			margin-top: 36px;
+
+			a {
+				text-decoration: none;
+				color: #666666;
+				font-size: 13px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+
+		&--active {
+
+			&:before {
+				@include null-pseudo;
+				top: 50%;
+				margin-top: -3px;
+				left: 0;
+				border-top: 3px solid transparent;
+				border-left: 3px solid #3f3f3f;
+				border-right: 3px solid transparent;
+				border-bottom: 3px solid transparent;
+			}
+
+			a {
+				text-decoration: none;
+				color: #3f3f3f;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
 .catalog-filter {
 	background-color: #ffffff;
 	border-radius: 3px;
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e8e8e8;
 
 	label {
 		@include clearfix;
@@ -3196,8 +3374,6 @@ a {
 
 	&__form {
 		@include clearfix;
-		box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
-		border: 1px solid #e8e8e8;
 
 		&--opened {
 			display: block !important;
@@ -3354,6 +3530,10 @@ a {
 	}
 }
 
+.catalog-subcategories + .catalog-filter {
+	margin-top: 30px;
+}
+
 .catalog-sort {
 	display: inline-block;
 	vertical-align: top;
@@ -3476,6 +3656,7 @@ a {
 }
 
 .catalog-list-item {
+	@include clearfix;
 	background-color: #ffffff;
 	border-radius: 14px;
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
@@ -3554,12 +3735,12 @@ a {
 			vertical-align: top;
 			color: #00b29c;
 			font-size: 15px;
-			text-decoration: none;
 			padding-left: 40px;
 			background-image: url("../img/icons/cart-green.png");
 			background-repeat: no-repeat;
 			background-position: 0 50%;
 			padding-right: 12px;
+			text-decoration: none;
 
 			&:hover {
 				opacity: 1;
@@ -3567,6 +3748,16 @@ a {
 		}
 
 		&:hover {
+			background-color: #598ef0;
+			border-top-color: #598ef0;
+
+			a {
+				color: #ffffff;
+				background-image: url("../img/icons/cart-white.png");
+			}
+		}
+
+		&--in-cart {
 			background-color: #598ef0;
 			border-top-color: #598ef0;
 
@@ -4204,6 +4395,7 @@ a {
 	&__row {
 		@include null-list;
 		@include clearfix;
+		position: relative;
 		width: 100%;
 		height: 105px;
 		border: 1px solid #e8e8e8;
@@ -4419,6 +4611,24 @@ a {
 		@include size(mobile) {
 			height: auto;
 			line-height: 22px;
+		}
+	}
+
+	&__delete {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 1;
+
+		a {
+			@include img-replace;
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-image: url("../img/icons/close.png");
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
 		}
 	}
 
