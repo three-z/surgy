@@ -1,0 +1,101 @@
+//= _header.html
+
+	<div class="content">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="#">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						Профиль
+					</li>
+				</ul>
+			</div>
+			<div class="page-title">
+				<h1>Профиль</h1>
+			</div>
+			<div class="personal">
+				<div class="personal__sidebar">
+					//= _personal-nav.html
+				</div>
+				<div class="personal__content">
+					<div class="errors">
+						Вы сломали интернет!
+					</div>
+					<div class="profile">
+						<form action="" class="form">
+							<div class="profile__content">
+								<div class="form__block">
+									<div class="form__title">
+										<h3>Регистрационная информация</h3>
+									</div>
+									<div class="form__row">
+										<input type="text" placeholder="Имя Фамилия Отчество" class="error">
+									</div>
+									<div class="form__row">
+										<input type="text" placeholder="E-mail" class="error">
+									</div>
+									<div class="form__row">
+										<input type="text" placeholder="Логин" class="error">
+									</div>
+									<div class="form__row">
+										<input type="password" placeholder="Старый пароль" class="error">
+									</div>
+									<div class="form__row">
+										<input type="password" placeholder="Новый пароль" class="error">
+									</div>
+									<div class="form__row">
+										<input type="password" placeholder="Введите новый пароль ещё раз">
+									</div>
+									<div class="form__row">
+										<select>
+											<option value="">Часовой пояс</option>
+											<option value="">Часовой пояс</option>
+											<option value="">Часовой пояс</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="profile__sidebar">
+								<div class="form__block form__block--alt">
+									<div class="form__title">
+										<h3>Личные данные</h3>
+									</div>
+									<div class="form__row">
+										<input type="text" placeholder="Профессия">
+									</div>
+									<div class="form__row">
+										<input type="text" placeholder="Веб-сайт">
+									</div>
+									<div class="form__row">
+										<select>
+											<option value="">Пол</option>
+											<option value="">Пол</option>
+											<option value="">Пол</option>
+										</select>
+									</div>
+									<div class="form__row">
+										<input type="text" placeholder="Телефон">
+									</div>
+									<div class="form__row">
+										<input type="text" placeholder="Факс">
+									</div>
+								</div>
+							</div>
+							<div class="profile__controls">
+								<div class="form__block form__block--controls">
+									<div class="form__row">
+										<button type="submit">Сохранить</button>
+										<a href="#" class="form__reset">Сбросить</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+//= _footer.html

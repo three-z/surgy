@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
 	<link rel="stylesheet" href="bower_components/jquery.form-styler/dist/jquery.formstyler.css">
 	<link rel="stylesheet" href="bower_components/jquery.form-styler/dist/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="bower_components/fancybox/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
 
 	<link rel="stylesheet" href="css/styles.css">
@@ -118,7 +119,7 @@
 					</div>
 				</div>
 				<div class="header-call">
-					<a href="#">Заказать звонок</a>
+					<a href="#popup-callback" class="popup-open">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
@@ -328,9 +329,36 @@
 	</div>
 </div>
 
+<div class="popup" id="popup-callback">
+	<div class="popup-callback">
+		<h3>Заказать звонок</h3>
+		<form action="" class="popup-form">
+			<div class="popup-form__row">
+				<input type="text" placeholder="Имя">
+			</div>
+			<div class="popup-form__row">
+				<input type="text" placeholder="Телефон">
+			</div>
+			<div class="popup-form__row">
+				<input type="text" placeholder="E-mail">
+			</div>
+			<div class="popup-form__row">
+				<textarea placeholder="Текст сообщения"></textarea>
+			</div>
+			<div class="popup-form__row popup-form__row--confirms">
+				<label><input type="checkbox"> Я согласен с политикой  конфиденциальности</label>
+			</div>
+			<div class="popup-form__controls">
+				<button type="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+</div>
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="bower_components/jquery.form-styler/dist/jquery.formstyler.min.js"></script>
+<script src="bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
 <script src="bower_components/matchheight/dist/jquery.matchHeight-min.js"></script>
 <script src="bower_components/slick.js/slick/slick.min.js"></script>
 

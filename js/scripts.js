@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$(".page select, .page input[type='file'], .page input[type='radio'], .page input[type='checkbox']").each(function () {
+	$(".page select, .page input[type='file'], .page input[type='radio'], .page input[type='checkbox'], .popup select, .popup input[type='file'], .popup input[type='radio'], .popup input[type='checkbox']").each(function () {
 		if (!$(this).hasClass("no-styler")) {
 			$(this).styler({
 				fileBrowse: "Выбрать файл"
@@ -201,5 +201,10 @@ $(document).ready(function() {
 	$('.catalog-item__count input, .cart-table__count input').spinner({
 		min: 1,
 		max: 99
+	});
+
+	$('.popup-open').fancybox({
+		padding: 0,
+		fitToView: false
 	});
 });

@@ -40,6 +40,7 @@ h2 {
 }
 
 a {
+	outline: none;
 	text-decoration: underline;
 	color: #598ef0;
 
@@ -50,6 +51,35 @@ a {
 }
 
 // common
+
+.fancybox-content {
+	background: #ffffff;
+	overflow: visible;
+}
+
+.fancybox-close-small {
+	width: auto;
+	color: #ffffff;
+	bottom: 100%;
+	top: auto;
+	height: auto;
+	padding: 0;
+	margin-right: -20px;
+	font-size: 12px;
+	height: 60px;
+	line-height: 60px;
+
+	&:before {
+		content: "Закрыть";
+	}
+
+	svg {
+		width: 60px;
+		display: inline-block;
+		vertical-align: middle;
+		opacity: 1;
+	}
+}
 
 .errors {
 	display: inline-block;
@@ -187,7 +217,8 @@ a {
 	}
 }
 
-.page {
+.page,
+.popup {
 
 	* {
 		transition: all 0.2s ease;
@@ -1308,7 +1339,7 @@ a {
 // footer
 
 .footer {
-	background-image: url("../img/footer-pattern.png");
+	background-image: url("../img/footer/bg.png");
 	background-repeat: repeat;
 	background-position: 0 0;
 	background-color: #edf1f9;
@@ -3784,7 +3815,7 @@ a {
 		margin-top: 20px;
 		color: #000000;
 		font-size: 27px;
-		font-weight: 600;;
+		font-weight: 600;
 	}
 
 	&__price-old + &__price {
@@ -4717,7 +4748,7 @@ a {
 	}
 
 	&__block {
-		max-width: 550px;
+		max-width: 573px;
 
 		&--controls {
 			padding-top: 27px;
@@ -4762,6 +4793,74 @@ a {
 
 	&__row {
 		margin-bottom: 20px;
+	}
+
+	&__reset {
+		display: inline-block;
+		vertical-align: top;
+		color: #717171;
+		margin-left: 30px;
+		margin-top: 15px;
+	}
+}
+
+// popup form
+
+.popup-form {
+
+	input[type="text"],
+	input[type="password"],
+	textarea {
+		max-width: 100%;
+	}
+
+	label {
+		@include clearfix;
+		cursor: pointer;
+	}
+
+	.jq-checkbox,
+	.jq-radio {
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	button {
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		max-width: 221px;
+		height: 54px;
+		line-height: 50px;
+		border: 2px solid #0ce88e;
+		border-radius: 27px;
+		text-align: center;
+		color: #010101;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	&__row {
+		margin-bottom: 15px;
+
+		&--confirms {
+
+			label {
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	&__controls {
+		text-align: center;
 	}
 }
 
@@ -4812,12 +4911,6 @@ a {
 	&__sidebar {
 		float: left;
 		width: 23%;
-		border: 1px solid #e8e8e8;
-		border-radius: 3px;
-		padding-top: 24px;
-		padding-left: 19px;
-		padding-right: 10px;
-		padding-bottom: 18px;
 
 		@include size(small) {
 			float: none;
@@ -4846,6 +4939,12 @@ a {
 }
 
 .personal-nav {
+	border: 1px solid #e8e8e8;
+	border-radius: 3px;
+	padding-top: 24px;
+	padding-left: 19px;
+	padding-right: 10px;
+	padding-bottom: 18px;
 
 	&__list {
 		@include null-list;
@@ -4858,6 +4957,18 @@ a {
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		&--exit {
+			margin-top: 36px;
+
+			a {
+				text-decoration: none;
+				color: #666666;
+				font-size: 13px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
 		}
 
 		&--active {
@@ -4879,19 +4990,6 @@ a {
 				font-weight: bold;
 			}
 		}
-	}
-}
-
-.personal-exit {
-	margin-top: 36px;
-	margin-left: 20px;
-
-	a {
-		text-decoration: none;
-		color: #666666;
-		font-size: 13px;
-		font-weight: 700;
-		text-transform: uppercase;
 	}
 }
 
@@ -4957,7 +5055,7 @@ a {
 		border-radius: 3px;
 		color: #ffffff;
 		background-color: #69f;
-		margin-top: -6px;;
+		margin-top: -6px;
 
 		&--canceled {
 			background-color: #d4d4d4;
@@ -5112,7 +5210,7 @@ a {
 
 		a {
 			display: inline-block;
-			vertical-align: top;;
+			vertical-align: top;
 		}
 
 		@include size(small) {
@@ -5290,5 +5388,180 @@ a {
 		&--email a {
 			background-image: url("../img/icons/mail-black.png");
 		}
+	}
+}
+
+// profile
+
+.profile {
+
+	@include clearfix;
+
+	&__content {
+		float: left;
+		width: 47%;
+
+		@include size(small) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	&__sidebar {
+		float: right;
+		width: 49%;
+		margin-top: -26px;
+
+		@include size(small) {
+			float: none;
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+
+	&__controls {
+		width: 47%;
+		clear: both;
+		padding-top: 10px;
+
+		@include size(small) {
+			float: none;
+			width: 100%;
+		}
+	}
+}
+
+// 404
+
+.page-404 {
+	margin-top: -35px;
+	padding-top: 134px;
+	padding-bottom: 70px;
+	text-align: center;
+	background-image: url("../img/404/bg.png");
+	background-repeat: no-repeat;
+	background-position: 53% -5px;
+
+	@include size(small) {
+		margin-top: -17px;
+	}
+
+	img {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+// contacts
+
+.contacts {
+	padding-bottom: 70px;
+
+	&__list {
+		@include null-list;
+		@include clearfix;
+	}
+
+	&__item {
+		float: left;
+		width: 21%;
+		padding-left: 50px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		padding-top: 3px;
+
+		h3 {
+			@include null-block;
+			margin-bottom: 7px;
+			font-size: 18px;
+		}
+
+		&--time {
+			background-image: url("../img/icons/time-green.png");
+		}
+
+		&--phone {
+			background-image: url("../img/icons/phone-green.png");
+		}
+
+		&--email {
+			background-image: url("../img/icons/mail-green.png");
+
+			@include size(small) {
+				clear: both;
+			}
+		}
+
+		&--address {
+			background-image: url("../img/icons/address-green.png");
+			width: 37%;
+		}
+
+		@include size(small) {
+			width: 50%;
+		}
+
+		@include size(mobile) {
+			width: 100%;
+		}
+	}
+
+	&__map {
+		margin-top: 30px;
+		position: relative;
+	}
+
+	&__form {
+		position: absolute;
+		right: 58px;
+		bottom: -47px;
+		width: 100%;
+		max-width: 370px;
+		background-color: #fff;
+		box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+		padding-top: 25px;
+		padding-left: 26px;
+		padding-right: 26px;
+		padding-bottom: 30px;
+
+		h3 {
+			@include null-block;
+			color: #060606;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-decoration: none;
+			margin-bottom: 18px;
+			text-align: center;
+		}
+
+		@include size(small) {
+			position: static;
+			margin-top: 30px;
+			max-width: 100%;
+		}
+	}
+}
+
+// popup
+
+.popup {
+	display: none;
+}
+
+.popup-callback {
+	width: 100%;
+	max-width: 370px;
+
+	h3 {
+		@include null-block;
+		color: #060606;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		margin-bottom: 18px;
+		text-align: center;
 	}
 }
