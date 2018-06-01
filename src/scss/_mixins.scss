@@ -66,6 +66,10 @@
 
 	& > * {
 		@include null-block;
+
+		&:before {
+			display: none;
+		}
 	}
 }
 
@@ -120,7 +124,7 @@
 	white-space: nowrap;
 }
 
-@mixin vertical-align {
+@mixin vertical-canter {
 
 	&:before {
 		@include null-inline-pseudo;

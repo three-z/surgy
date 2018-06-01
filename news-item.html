@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title></title>
+
+	<link rel="stylesheet" href="bower_components/open-sans.css">
+
+	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+	<link rel="stylesheet" href="bower_components/jquery.form-styler/dist/jquery.formstyler.css">
+	<link rel="stylesheet" href="bower_components/jquery.form-styler/dist/jquery.formstyler.theme.css">
+	<link rel="stylesheet" href="bower_components/fancybox/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="page">
+
+	<div class="header">
+		<div class="header-mobile">
+			<div class="container">
+				<div class="header-mobile__button">
+					<a href="#">Меню</a>
+				</div>
+				<div class="header-mobile__logo">
+					<a href="#"><img src="img/logo-mobile.png" alt=""></a>
+				</div>
+				<div class="header-mobile__cart">
+					<a href="#">0</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-top">
+			<div class="container">
+				<div class="header-nav">
+					<ul class="header-nav__list">
+						<li class="header-nav__item"><a href="#">О компании</a></li>
+						<li class="header-nav__item"><a href="#">Новости</a></li>
+						<li class="header-nav__item"><a href="#">Оплата</a></li>
+						<li class="header-nav__item"><a href="#">Доставка</a></li>
+						<li class="header-nav__item"><a href="#">Как заказать</a></li>
+						<li class="header-nav__item"><a href="#">Партнёрам</a></li>
+						<li class="header-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header-user">
+					<ul class="header-user__list">
+						<!--
+						<li class="header-user__item header-user__item--login">
+							<a href="#">Войти</a>
+							<div class="header-login">
+								<form action="" class="header-login__form">
+									<div class="errors">
+										Вы сломали интернет!
+									</div>
+									<div class="header-login__line">
+										<input type="text" placeholder="E-mail" class="error">
+									</div>
+									<div class="header-login__line">
+										<input type="password" placeholder="Пароль" class="error">
+									</div>
+									<div class="header-login__line">
+										<label><input type="checkbox"> Запомнить меня</label>
+									</div>
+									<div class="header-login__line">
+										<button type="submit">Вход</button>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li class="header-user__item header-user__item--register"><a href="#">Зарегистрироваться</a></li>
+						-->
+						<li class="header-user__item header-user__item--personal">
+							<a href="#">Личный кабинет</a>
+							<div class="header-personal-nav">
+								<ul class="header-personal-nav__list">
+									<li class="header-personal-nav__item">
+										<a href="#">Персональная страница</a>
+									</li>
+									<li class="header-personal-nav__item">
+										<a href="#">Профиль</a>
+									</li>
+									<li class="header-personal-nav__item">
+										<a href="#">История заказов</a>
+									</li>
+									<li class="header-personal-nav__item header-personal-nav__item--exit">
+										<a href="#">Выход</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="header-contacts">
+					<div class="header-contacts__phone">
+						<a href="tel:88000000000">8 (800) 000-00-00</a><br>
+						<span>Бесплатно по всей России</span>
+					</div>
+					<div class="header-contacts__phone">
+						<a href="tel:+73832095069">7 (383) 209-50-69</a><br>
+						<span>Новосибирск</span>
+					</div>
+					<div class="header-contacts__mail">
+						<a href="mailto:mail@surgy-pro.ru">mail@surgy-pro.ru</a>
+					</div>
+				</div>
+				<div class="header-call">
+					<a href="#popup-callback" class="popup-open">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="middle">
+		<div class="container">
+			<div class="middle-nav">
+				<div class="middle-nav__button">
+					<a href="#">Каталог товаров</a>
+				</div>
+				<div class="middle-search">
+					<form action="" class="middle-search__form">
+						<input type="text" placeholder="Введите что вы хотите найти, например, операционная лампа">
+						<button type="submit">Искать</button>
+					</form>
+				</div>
+				<ul class="middle-nav__list">
+					<li class="middle-nav__item">
+						<a href="#">Электрохирургическое оборудование</a>
+						<ul class="middle-nav__list">
+							<li class="middle-nav__item">
+								<a href="#">Эндовидеокамеры и комплектующие</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Оптика</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Электрохирургическое оборудование</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Эндовидеокамеры и комплектующие</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Оптика</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Эндовидеокамеры и комплектующие</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Оптика</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Электрохирургическое оборудование</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Эндовидеокамеры и комплектующие</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Оптика</a>
+							</li>
+						</ul>
+					</li>
+					<li class="middle-nav__item">
+						<a href="#">Оборудование для лапароскопии</a>
+						<ul class="middle-nav__list">
+							<li class="middle-nav__item">
+								<a href="#">Электрохирургическое оборудование</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Эндовидеокамеры и комплектующие</a>
+							</li>
+							<li class="middle-nav__item">
+								<a href="#">Оптика</a>
+							</li>
+						</ul>
+					</li>
+					<li class="middle-nav__item">
+						<a href="#">Лапароскопические инструменты</a>
+					</li>
+					<li class="middle-nav__item">
+						<a href="#">Хирургический шовный материал</a>
+					</li>
+					<li class="middle-nav__item">
+						<a href="#">Сшивающие аппараты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="middle-cart">
+				<a href="#">Корзина <strong>0</strong></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="#">Главная</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a href="#">Новости</a>
+					</li>
+					<li class="breadcrumbs__item">
+						Желчнокаменная болезнь - диагностика и лечение
+					</li>
+				</ul>
+			</div>
+			<div class="page-title">
+				<h1>Желчнокаменная болезнь - диагностика и лечение</h1>
+			</div>
+			<div class="content__image content__image--right">
+				<img src="img/news/1.jpg" alt="">
+			</div>
+			<div class="content__date">
+				Дата публикации: 21.02.2018
+			</div>
+			<h2>Профессиональный интернет-магазин «Surgy-Pro.ru»</h2>
+			Из названия следует, что эта болезнь предполагает наличие камней в желчном пузыре
+			и желчевыводящих путях. <br>
+			Ею страдает 15-20% населения. Образование камней в желчном пузыре происходит в результате
+			осаждения плотных частичек желчи. Большая часть камней состоит из холестерина, билирубина
+			и солей кальция.<br>
+			<br>
+			Болезнь может протекать в различных вариантах: <br>
+			<br>
+			<ol>
+				<li>бессимптомно, когда человек не подозревает о наличии у него болезни; </li>
+				<li>как холецистит (острый или хронический), </li>
+				<li>о котором рассказано в прошлой рассылке - симптомы этого заболевания будут аналогичными; </li>
+				<li>как осложнение холецистита; </li>
+				<li>камни желчных протоков могут привести к появлению желтухи (симптомы - "пожелтение" кожи, конъюнктивы глаз).</li>
+			</ol>
+			<br>
+			Жалобы со стороны печени и желчного пузыря могут быть у больных сахарным диабетом, серповидно-клеточной анемией и некоторыми другими заболеваниями;
+			но это может быть признаком их основного заболевания, а не желчнокаменной болезни. В любом случае стоит проконсультироваться у врача.
+			<div class="content__back">
+				<a href="#">Вернуться назад</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-info">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+							<span>
+								Профессиональный интернет-магазин <br>
+								хирургического оборудования <br>
+								и материалов
+							</span>
+						</a>
+					</div>
+					<div class="footer-contacts">
+						<div class="footer-contacts__phone">
+							<a href="tel:88000000000">8 (800) 000-00-00</a><br>
+							<span>Бесплатно по всей России</span>
+						</div>
+						<div class="footer-contacts__phone">
+							<a href="tel:+73832095069">7 (383) 209-50-69</a><br>
+							<span>Новосибирск</span>
+						</div>
+						<div class="footer-contacts__mail">
+							<a href="mailto:mail@surgy-pro.ru">mail@surgy-pro.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-nav">
+					<ul class="footer-nav__list">
+						<li class="footer-nav__item footer-nav__item--active"><a href="#">О компании</a></li>
+						<li class="footer-nav__item"><a href="#">Новости</a></li>
+						<li class="footer-nav__item"><a href="#">Оплата</a></li>
+						<li class="footer-nav__item"><a href="#">Доставка</a></li>
+						<li class="footer-nav__item"><a href="#">Как заказать</a></li>
+						<li class="footer-nav__item"><a href="#">Партнёрам</a></li>
+						<li class="footer-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-subscribe">
+					<strong>Подпишитесь на рассылку</strong><br>
+					И получайте уведомления об акциях и скидках<br>
+					<form action="" class="footer-subscribe__form">
+						<input type="text" placeholder="Введите ваш E-mail">
+						<button type="submit">Подписаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-copy">
+					© 2017 ООО «Медицинская Техника и Технологии»
+				</div>
+				<div class="footer-payment">
+					Принимаем к оплате <img src="img/robokassa-logo.png" alt="">
+				</div>
+				<div class="footer-social">
+					<ul class="footer-social__list">
+						<li class="footer-social__item footer-social__item--fb"><a href="#">Facebook</a></li>
+						<li class="footer-social__item footer-social__item--vk"><a href="#">Вконтакте</a></li>
+						<li class="footer-social__item footer-social__item--ok"><a href="#">Одноклассники</a></li>
+						<li class="footer-social__item footer-social__item--in"><a href="#">Instagram</a></li>
+						<li class="footer-social__item footer-social__item--yt"><a href="#">YouTube</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup" id="popup-callback">
+	<div class="popup-callback">
+		<h3>Заказать звонок</h3>
+		<form action="" class="popup-form">
+			<div class="popup-form__row">
+				<input type="text" placeholder="Имя">
+			</div>
+			<div class="popup-form__row">
+				<input type="text" placeholder="Телефон">
+			</div>
+			<div class="popup-form__row">
+				<input type="text" placeholder="E-mail">
+			</div>
+			<div class="popup-form__row">
+				<textarea placeholder="Текст сообщения"></textarea>
+			</div>
+			<div class="popup-form__row popup-form__row--confirms">
+				<label><input type="checkbox"> Я согласен с политикой  конфиденциальности</label>
+			</div>
+			<div class="popup-form__controls">
+				<button type="submit">Отправить</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/jquery.form-styler/dist/jquery.formstyler.min.js"></script>
+<script src="bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="bower_components/matchheight/dist/jquery.matchHeight-min.js"></script>
+<script src="bower_components/slick.js/slick/slick.min.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
