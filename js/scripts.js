@@ -207,4 +207,30 @@ $(document).ready(function() {
 		padding: 0,
 		fitToView: false
 	});
+
+	$('.header-mobile__button a').on('click', function(e) {
+		e.preventDefault();
+		$('.mobile-nav').toggleClass('mobile-nav--opened');
+		if ($('.mobile-nav').hasClass('mobile-nav--opened')) {
+			$('<div class="mobile-nav__overlay" />').appendTo('.page').mousedown(function(e) {
+				var clicked = $(e.target);
+				if (clicked.is('.mobile-nav') || clicked.parents().is('.mobile-nav')) {
+					return;
+				}
+				else {
+					$('.mobile-nav').toggleClass('mobile-nav--opened');
+					$('.mobile-nav__overlay').remove();
+				}
+			});
+		}
+		else {
+			$('.mobile-nav__overlay').remove();
+		}
+	});
+
+	$('.mobile-nav__close a').on('click', function(e) {
+		e.preventDefault();
+		$('.mobile-nav').toggleClass('mobile-nav--opened');
+		$('.mobile-nav__overlay').remove();
+	});
 });

@@ -84,6 +84,10 @@
 		font-size: $base-font-size;
 		line-height: $base-line-height;
 		letter-spacing: 0;
+
+		&:before {
+			display: none;
+		}
 	}
 }
 
