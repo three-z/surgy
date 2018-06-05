@@ -233,6 +233,19 @@ ul li:before {
 .errors {
   display: inline-block;
   vertical-align: top;
+  background: #0ce88e;
+  padding: 10px;
+  font-weight: normal !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  position: relative;
+}
+
+.success {
+  display: inline-block;
+  vertical-align: top;
   background: #ff6363;
   padding: 10px;
   font-weight: normal !important;
