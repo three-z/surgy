@@ -233,4 +233,23 @@ $(document).ready(function() {
 		$('.mobile-nav').toggleClass('mobile-nav--opened');
 		$('.mobile-nav__overlay').remove();
 	});
+
+	$('.middle-search__form input[type="text"]').on('change keyup paste', function() {
+		$(this).parents('.middle-search').addClass('middle-search--opened');
+		if ($('.middle-search').hasClass('middle-search--opened')) {
+			$('<div class="middle-search__overlay" />').appendTo('.page').mousedown(function(e) {
+				var clicked = $(e.target);
+				if (clicked.is('.middle-search') || clicked.parents().is('.middle-search')) {
+					return;
+				}
+				else {
+					$('.middle-search').toggleClass('middle-search--opened');
+					$('.middle-search__overlay').remove();
+				}
+			});
+		}
+		else {
+			$('.middle-search__overlay').remove();
+		}
+	});
 });
